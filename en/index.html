@@ -18,7 +18,10 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);
 .gut{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 .wrap{max-width:980px;margin:0 auto}
 .mast{border-bottom:1px solid var(--line)}
-.mast .wrap{padding-block:34px 28px;display:flex;flex-direction:column;gap:8px}
+.mast .wrap{padding-block:34px 28px;display:flex;align-items:center;gap:28px}
+.mast .who{display:flex;flex-direction:column;gap:8px;min-width:0}
+.mast .ph{width:136px;height:136px;border-radius:50%;object-fit:cover;flex:none;border:1px solid var(--line)}
+@media (max-width:560px){.mast .wrap{flex-direction:column;align-items:flex-start;gap:18px}.mast .ph{width:112px;height:112px}}
 h1{margin:0;font-weight:600;font-size:clamp(28px,4.4vw,42px);line-height:1.12}
 .role{font-family:var(--sans);font-size:15.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 18px}
 .role b{color:var(--ink);font-weight:600}
@@ -62,9 +65,12 @@ footer .wrap{padding-block:22px;font-family:var(--sans);font-size:13.5px;color:v
 <body>
 <header class="mast gut">
   <div class="wrap">
+    <img class="ph" src="../img/diego.jpg" alt="Diego González Rodríguez" width="400" height="400">
+    <div class="who">
     <h1>Diego González Rodríguez, Ph.D.</h1>
     <div class="role"><span><b>Professor</b> · Universidad Camilo José Cela (Madrid)</span><span><b>Collaborating researcher</b> · Norwegian University of Science and Technology (NTNU)</span></div>
     <div class="links"><a href="https://www.ucjc.edu/profesores/diego-gonzalez-rodriguez/">UCJC profile</a><a href="https://scholar.google.com/citations?user=7DydhV0AAAAJ">Google Scholar</a><a href="https://es.linkedin.com/in/diegogonzalezphd">LinkedIn</a><a href="mailto:diego.gonzalez2@ucjc.edu">Email</a></div>
+    </div>
   </div>
 </header>
 <nav class="gut" aria-label="Sections">
