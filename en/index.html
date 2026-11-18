@@ -29,6 +29,10 @@ h1{margin:0;font-weight:300;font-size:clamp(32px,5vw,52px);line-height:1.05;lett
 .tag em{color:var(--gold)}
 .role{font-family:var(--sans);font-size:15px;color:var(--soft);display:flex;flex-wrap:wrap;gap:4px 18px}
 .role b{color:var(--cream);font-weight:500}
+.mail{margin:0;font-family:var(--sans);font-size:15px}
+.mail a{color:var(--cream);text-decoration-color:rgba(227,166,74,.7)}
+.mail a:hover{color:var(--gold)}
+.mail a:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .links{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
 .links a{font-family:var(--sans);font-size:14px;font-weight:500;text-decoration:none;color:var(--gold);border:1px solid rgba(227,166,74,.7);padding:7px 14px;min-height:36px;display:inline-flex;align-items:center;border-radius:2px}
 .links a:hover{background:var(--gold);color:var(--maroon)}
@@ -83,7 +87,8 @@ footer em{font-family:var(--serif);font-size:16px;color:var(--gold)}
       <h1>Diego González Rodríguez, Ph.D.</h1>
       <p class="tag"><span>Cognition, complexity and computation</span><em>In dialogue with Indian philosophy</em></p>
       <div class="role"><span><b>Professor</b> · Universidad Camilo José Cela (Madrid)</span><span><b>Collaborating researcher</b> · Norwegian University of Science and Technology (NTNU)</span></div>
-      <div class="links"><a href="https://scholar.google.com/citations?user=7DydhV0AAAAJ">Google Scholar</a><a href="https://es.linkedin.com/in/diegogonzalezphd">LinkedIn</a><a href="https://www.instagram.com/diego.gonzalez.phd/">Instagram</a><a href="mailto:diego.gonzalez2@ucjc.edu">Email</a></div>
+      <p class="mail"><a href="mailto:diego.gonzalez2@ucjc.edu">diego.gonzalez2@ucjc.edu</a></p>
+      <div class="links"><a href="https://scholar.google.com/citations?user=7DydhV0AAAAJ">Google Scholar</a><a href="https://es.linkedin.com/in/diegogonzalezphd">LinkedIn</a><a href="https://www.instagram.com/diego.gonzalez.phd/">Instagram</a></div>
       </div>
     </div>
     <div class="insts"><img src="../img/ucjc-white.png" alt="Universidad Camilo José Cela" height="48"><span class="sep" aria-hidden="true"></span><img src="../img/ntnu-white.png" alt="NTNU, Norwegian University of Science and Technology" height="28"></div>
@@ -148,7 +153,7 @@ footer em{font-family:var(--serif);font-size:16px;color:var(--gold)}
   </div>
 </main>
 <footer class="gut">
-  <div class="wrap"><span>Diego González Rodríguez · Madrid</span><em>Cognition, complexity and computation · In dialogue with Indian philosophy</em></div>
+  <div class="wrap"><span>Diego González Rodríguez · Madrid · <a href="mailto:diego.gonzalez2@ucjc.edu" style="color:inherit">diego.gonzalez2@ucjc.edu</a></span><em>Cognition, complexity and computation · In dialogue with Indian philosophy</em></div>
 </footer>
 </body>
 </html>
